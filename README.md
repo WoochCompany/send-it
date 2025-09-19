@@ -199,8 +199,21 @@ database/
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU General Public License v3 (GPL-3.0)**.
 
+### You are free to:
+- Use this software for **commercial or non-commercial purposes**.
+- Modify and redistribute the software, **as long as any modified version is also released under the GPL-3.0 license**.
+
+### You may not:
+- Sell a modified version under a different license.
+- Use this code in a proprietary project without releasing your modifications under the GPL-3.0.
+
+### Full License Text
+See the [LICENSE](LICENSE) file for the complete legal terms.
+
+---
+**Note:** This license ensures that all improvements remain open and accessible to the community.
 ## 🤝 Support
 
 If you encounter any issues or have questions:
