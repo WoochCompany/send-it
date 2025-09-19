@@ -1,0 +1,54 @@
+### Add Message - Basic Request
+POST http://localhost:8000/api/messages
+Content-Type: application/json
+Accept: application/json
+
+{
+  "recipient": "test@example.com",
+  "subject": "Test Message",
+  "body": "Ceci est un message de test envoyé via l'API"
+}
+
+### Add Message - Scheduled with Tags
+POST http://localhost:8000/api/messages
+Content-Type: application/json
+Accept: application/json
+
+{
+  "recipient": "user@example.com",
+  "subject": "Message Programmé dans longtemps",
+  "body": "Ce message sera envoyé à une heure programmée avec des tags",
+  "scheduled_at": "2025-10-19 15:30:00"
+}
+
+### Add Message - Immediate Send
+POST http://localhost:8000/api/messages
+Content-Type: application/json
+Accept: application/json
+
+{
+  "recipient": "immediate@example.com",
+  "subject": "Message Immédiat",
+  "body": "Ce message sera envoyé immédiatement"
+}
+
+### Add Message - Only Required Field
+POST http://localhost:8000/api/messages
+Content-Type: application/json
+Accept: application/json
+
+{
+  "recipient": "minimal@example.com"
+}
+
+### Add Message - With Custom Provider (if available)
+POST http://localhost:8000/api/messages
+Content-Type: application/json
+Accept: application/json
+
+{
+  "recipient": "provider-test@example.com",
+  "subject": "Test avec Provider Spécifique",
+  "body": "Ce message utilise un provider spécifique",
+  "provider_slug": "example-provider"
+}
